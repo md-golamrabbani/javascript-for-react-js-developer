@@ -1,11 +1,13 @@
-// const x = 10;
-// x = 20;
-// console.log(x);
-// here is a error but
+// object
+const person = {
+    firstname: "Golam",
+    lastname: "Rabbani",
+    age: 20,
+    address() {
+        return this.firstname + this.lastname
+    }
+}
 
-const name = ['golamrabbani', 'nazmul'];
-console.log(name);
-// if i push the new value
-name.push('tamima');
-console.log(name);
+console.log(person.age);
+console.log(person.address());
 
