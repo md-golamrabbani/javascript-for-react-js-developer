@@ -1,14 +1,10 @@
-// bind method
-const person = {
-    name: "golamrabbani",
-    age: 24,
-    output() {
-        console.log(this);
-    }
-}
-person.output();
+// normal function
+// const square = function(number) {
+//     return number*number;
+// }
+// console.log(square(5));
 
-const getResult = person.output.bind(person);
-getResult();
-
+// fat arrow function
+const square = (number) => number*number;
+console.log(square(5));
 
