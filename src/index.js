@@ -1,7 +1,16 @@
-// spread operator using object
-const first = { name: "Golam Rabbani" };
-const second = { job: "Student" };
+// classes
+class Person {
+    constructor(name) {
+        this.name = name;
+        console.log(this.name);
+        
+    }
 
-const combined = {...first, ...second, location: "Bangladesh"};
-console.log(combined);
+    walk() {
+        console.log("walk");
+    }
+}
+
+const person = new Person("Golam Rabbani");
+person.walk();
 
