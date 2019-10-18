@@ -1,9 +1,7 @@
-// classes
+// inheritance
 class Person {
     constructor(name) {
         this.name = name;
-        console.log(this.name);
-        
     }
 
     walk() {
@@ -11,6 +9,16 @@ class Person {
     }
 }
 
-const person = new Person("Golam Rabbani");
-person.walk();
+class Teacher extends Person {
+    constructor(name, degree) {
+        super(name);
+        this.degree = degree;
+    }
 
+    teach() {
+        console.log(this.name, this.degree);
+    }
+}
+
+const teacher = new Teacher("Golam Rabbani", "MSc");
+teacher.teach();
