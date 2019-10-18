@@ -1,13 +1,18 @@
-// object
+// this keyword
+// this is a object base object, such as, it is a person object. because it setup a veriable
 const person = {
-    firstname: "Golam",
-    lastname: "Rabbani",
-    age: 20,
-    address() {
-        return this.firstname + this.lastname
+    name: "golamrabbani",
+    age: 24,
+    output() {
+        console.log(this);
     }
 }
+person.output();
 
-console.log(person.age);
-console.log(person.address());
+// this is windows object
+function name() {
+    console.log(this);
+}
+name();
+
 
