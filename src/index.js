@@ -1,5 +1,4 @@
-// this keyword
-// this is a object base object, such as, it is a person object. because it setup a veriable
+// bind method
 const person = {
     name: "golamrabbani",
     age: 24,
@@ -9,10 +8,7 @@ const person = {
 }
 person.output();
 
-// this is windows object
-function name() {
-    console.log(this);
-}
-name();
+const getResult = person.output.bind(person);
+getResult();
 
 
