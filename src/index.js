@@ -1,16 +1,12 @@
-// object destructuring
-const address = {
-    city: "Nawabganj",
-    village: "Hogla",
-    phone: 1772708647
-};
+// spread operator
+const first = [1, 2, 3];
+const second = [4, 5, 6];
 
-// const city = address.city;
-// const village = address.village;
-// const phone = address.phone;
-// console.log(phone);
-// all data set new variable
-const { city, village, phone } = address;
-// if specific variable -> save data
-const { city: myCity } = address;
-console.log(myCity);
+// old way
+// const combined = first.concat(second);
+// console.log(combined);
+
+// new way -> three dot means (...) spread operator
+const combined = [...first, ...second];
+console.log(combined);
+
