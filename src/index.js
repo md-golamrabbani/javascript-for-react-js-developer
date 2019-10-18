@@ -1,6 +1,7 @@
 // var keyword 
 function hello() {
-    for(var i=0; i<5; i++) {
+    let i = 10;
+    for(let i=0; i<5; i++) {
         console.log(i);
     }
     console.log(i);
