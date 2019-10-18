@@ -1,12 +1,7 @@
-// spread operator
-const first = [1, 2, 3];
-const second = [4, 5, 6];
+// spread operator using object
+const first = { name: "Golam Rabbani" };
+const second = { job: "Student" };
 
-// old way
-// const combined = first.concat(second);
-// console.log(combined);
-
-// new way -> three dot means (...) spread operator
-const combined = [...first, ...second];
+const combined = {...first, ...second, location: "Bangladesh"};
 console.log(combined);
 
