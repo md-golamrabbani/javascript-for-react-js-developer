@@ -1,10 +1,20 @@
-// uses of fat arrow function
-const jobs = [
-    { id: 1, isActive: true},
-    { id: 2, isActive: true},
-    { id: 3, isActive: false}
-];
+// object diff
+const person = {
+    talk() {
+        // this is a windows object
+        // setTimeout(function() {
+        //     console.log("this", this);
+        // }, 1000);
+        // this is a person object
+        // var self = this;
+        // setTimeout(function() {
+        //     console.log("self", self);
+        // }, 1000);
+        // now, we are use fat arrow function.
+        setTimeout(() => {
+            console.log("this", this);
+        }, 1000);
+    }
+}
 
-//const activeJob = jobs.filter(function(job) {return job.isActive});
-const activeJob = jobs.filter(job => job.isActive);
-console.log(activeJob);
+console.log(person.talk());
